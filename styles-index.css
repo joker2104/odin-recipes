@@ -1,6 +1,13 @@
+html, body{
+    box-sizing: border-box;
+}
+.heading{
+    padding: 6rem;
+}
 h1{  
     margin: none;
     font-family:monospace;
+    font-size: 3rem;
     font-weight: 1000;
     text-align: center;
 }
@@ -8,7 +15,9 @@ img{
     object-fit: cover;
     width: 20rem;
     border-radius: 10%;
-    transition: transform .2s;
+    transition: transform .2s ease-in-out;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #0c0c0c7f;
 }
 img:hover{
     transform: scale(1.2);

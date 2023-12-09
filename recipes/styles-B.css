@@ -1,3 +1,136 @@
+:root{
+    --background: rgb(252, 186, 3);
+    --p-text: rgb(28, 13, 1);
+    --heading1:rgb(43, 20, 1);
+    --heading2:rgb(82, 37, 0);
+    --nav:rgb(39, 9, 0);
+    --body-background: rgb(250, 190, 140);
+    --fs-400: 400;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 body{
-    background-color: aquamarine;
+    margin: 0;
+    
+    background-color: var(--body-background);
+    color: white;
+}
+
+p{
+    color: var(--p-text);
+    font-size: 1.2rem;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+    background-color: var(--nav);
+}
+nav h1{
+    left: 10%;
+    color: rgb(250, 190, 140);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content:stretch;
+    left: 40%;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(250, 190, 140);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    
+}
+nav li{
+    position: relative;
+    height: rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 10%;
+}
+nav li:hover{
+    background-color: rgb(250, 190, 140);
+    
+}
+nav li:hover  a{
+    color:rgb(28, 13, 1);
+    
+}
+h2{
+    color: var(--heading2);
+}
+h3{
+    color: var(--heading2);
+}
+li{
+    color: var(--p-text);
+}
+.ingredients{
+    margin: 0 20rem;
+    padding: 2rem;
+    
+    
+}
+.ingredients ul{
+    list-style: none;
+    font-size: x-large;
+    font-weight: 500;
+}
+.steps{
+    margin: 0 5rem;
+    padding: 4rem;
+    
+}
+.steps ol{
+    font-size: large;
+    font-weight: 500;
+}
+.video{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.description{
+    margin: 0 4rem;
+    padding: 0 1rem;
+}
+h1, h2{
+    text-transform: uppercase;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    
+    top: 4rem;
+}
+img{
+    object-fit: cover;
+    width: 20rem;
+    border-radius: 20%;
+    
 }
